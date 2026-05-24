@@ -2,7 +2,6 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ./app:/app
+      dockerfile: Dockerfile.production
     command: make test
+    image: apriakhin618/devops-for-developers-project-74
